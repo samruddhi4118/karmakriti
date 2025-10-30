@@ -1,100 +1,134 @@
-KarmaKriti - Handcrafted E-Commerce Platform
+# 🌸 Karmakriti
 
-<div align="center"> <img src="public/KarmaKriti.png" alt="KarmaKriti Logo" width="150"/> </div>
+Karmakriti is a community-based web application built using the **MERN stack** (MongoDB, Express.js, React.js, and Node.js).  
+It aims to promote and empower **local artisans and women in the cottage industry** by providing them with an online platform to showcase and sell their handmade products.  
 
-<p align="center"> A full-stack e-commerce application dedicated to showcasing and selling handmade products from artisans, built with the MERN stack (React, Node.js) and Firebase. </p>
+This project was developed as part of a **Field Project** by the team **3SR (Samruddhi, Srishti, Samarth, and Rahul)**.
 
-✨ Features
-Full User Authentication: Secure login and signup functionality using Firebase Authentication.
+---
 
-Dynamic Product Pages: Browse products by category and view detailed information on individual product pages.
+## 🧭 Overview
 
-Shopping Cart: Fully functional cart using React Context API to add and manage items globally.
+Karmakriti acts as a bridge between **rural women artisans** and **customers**, helping small-scale producers grow their businesses digitally.  
+The platform focuses on providing:
+- Product visibility for artisans  
+- Easy product management  
+- Customer-friendly UI  
+- Order and inventory tracking  
+- Smooth communication between sellers and customers  
 
-Wishlist: Users can add or remove their favorite products to a persistent wishlist.
+---
 
-Protected Checkout: A secure checkout process that requires user authentication before proceeding.
+## ✨ Features
 
-Responsive Design: A consistent and accessible user interface across desktop and mobile devices.
+- 🛍️ **Product Management** – Add, view, update, and delete handmade products  
+- 🔐 **User Authentication** – Firebase-based secure login and registration  
+- 🧵 **Category Filtering** – Browse products by categories like Chutneys, Handicrafts, Pickles, and more  
+- 💬 **Contact Page** – Easy way for customers to reach out  
+- 📱 **Responsive UI** – Works on mobile, tablet, and desktop  
+- ⚡ **Firebase Integration** – Used for database and authentication  
 
-Pop-up on Load: Displays a promotional or informational modal when the website first opens.
+---
 
-Modern SPA Routing: Seamless navigation between pages without reloads, powered by React Router.
+## 🛠️ Tech Stack
 
-🛠️ Tech Stack
-Frontend: React (with Vite), React Router
+| Technology | Purpose |
+|-------------|----------|
+| **React.js** | Frontend framework |
+| **Express.js** | Backend framework |
+| **Firebase** | Database and Authentication |
+| **Node.js** | Backend runtime |
+| **HTML, CSS, JavaScript** | Core web technologies |
 
-State Management: React Context API
+---
 
-Backend & Database: Firebase (Authentication, Firestore)
+## 📁 Project Structure
 
-Styling: Pure CSS
+```
+karmakriti/
+├── client/                  # React frontend
+│   ├── src/
+│   │   ├── components/      # Reusable components
+│   │   ├── pages/           # All page components (Home, Products, About, etc.)
+│   │   ├── App.js
+│   │   └── index.js
+│   └── package.json
+├── server/                  # Express backend (if included)
+│   ├── index.js
+│   └── package.json
+├── firebase.js              # Firebase configuration
+├── README.md
+└── package.json
+```
 
-🚀 Getting Started
-Follow these instructions to get a local copy of the project up and running for development and testing purposes.
+---
 
-Prerequisites
-Make sure you have Node.js and npm installed on your machine. You can download them from nodejs.org.
+## ⚙️ Installation and Setup
 
-Bash
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/samruddhi4118/karmakriti.git
+cd karmakriti
+```
 
-node -v
-npm -v
-Installation
-Clone the repository:
-
-Bash
-
-git clone https://github.com/your-username/karmakriti-project.git
-cd karmakriti-project
-Install dependencies:
-
-Bash
-
+### 2️⃣ Install Dependencies
+If the project has separate client and server folders:
+```bash
+cd client
 npm install
-Set up Firebase:
+```
 
-Create a firebase.js file in your src/ directory.
+### 3️⃣ Setup Firebase
+Create a file named `.env` in the root directory and add your Firebase configuration:
+```env
+VITE_FIREBASE_API_KEY=your_api_key
+VITE_FIREBASE_AUTH_DOMAIN=your_auth_domain
+VITE_FIREBASE_PROJECT_ID=your_project_id
+VITE_FIREBASE_STORAGE_BUCKET=your_storage_bucket
+VITE_FIREBASE_MESSAGING_SENDER_ID=your_sender_id
+VITE_FIREBASE_APP_ID=your_app_id
+```
 
-Go to your Firebase project console and get your web app's configuration object.
-
-Add your configuration to src/firebase.js and export the services:
-
-JavaScript
-
-// src/firebase.js
-import { initializeApp } from "firebase/app";
-import { getAuth } from "firebase/auth";
-import { getFirestore } from "firebase/firestore";
-
-const firebaseConfig = {
-apiKey: "YOUR_API_KEY",
-authDomain: "YOUR_AUTH_DOMAIN",
-// ...and so on
-};
-
-const app = initializeApp(firebaseConfig);
-export const auth = getAuth(app);
-export const db = getFirestore(app);
-Run the development server:
-
-Bash
-
+### 4️⃣ Run the App
+```bash
 npm run dev
-Open http://localhost:5173 to view it in the browser.
+```
+The app will start on `http://localhost:5173/` (for Vite) or `http://localhost:3000/` (for Create React App).
 
-📂 Project Structure
-The project follows a standard React application structure:
+---
 
-/
-├── public/ # Static assets (images, fonts, login-bg.jpg)
-├── src/
-│ ├── components/ # Reusable components (Navbar, ProductCard, etc.)
-│ ├── context/ # Global state management (CartContext, WishlistContext)
-│ ├── pages/ # Main page components (HomePage, Login, Cart, etc.)
-│ │ └── products/ # Individual product category pages
-│ ├── App.jsx # Main application component with routing
-│ ├── index.css # Global stylesheet
-│ └── main.jsx # Main entry point of the application
-├── index.html # Main HTML template
-└── package.json # Project dependencies and scripts
+## 💡 Usage
+
+1. Register or log in using Firebase Authentication.  
+2. Explore available products or add new ones.  
+3. Browse by category (Chutneys, Pickles, etc.).  
+4. Contact artisans for purchase or collaboration.  
+
+---
+
+## 👩‍💻 Team 3SR
+
+- **Samruddhi Suryawanshi**  
+- **Srishti Singh**  
+- **Samarth**  
+- **Rahul**
+
+Developed as a **Field Project** for the **Bachelor of Computer Applications (BCA)** program.
+
+---
+
+## 📜 License
+
+This project is licensed under the **MIT License** — feel free to modify and use it for educational purposes.
+
+---
+
+## 🙏 Acknowledgments
+
+- Guided by **Prajakta Mam** for mentorship and support  
+- Special thanks to our college for providing the platform to build and present this project  
+- Inspired by the mission to **empower women artisans through technology**
+
+---
+
+> **Karmakriti** – Handcrafted with ❤️ by Team 3SR
