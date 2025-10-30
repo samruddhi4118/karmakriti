@@ -3,8 +3,6 @@
 Karmakriti is a community-based web application built using the **MERN stack** (MongoDB, Express.js, React.js, and Node.js).  
 It aims to promote and empower **local artisans and women in the cottage industry** by providing them with an online platform to showcase and sell their handmade products.  
 
-This project was developed as part of a **Field Project** by the team **3SR (Samruddhi, Srishti, Samarth, and Rahul)**.
-
 ---
 
 ## 🧭 Overview
