@@ -105,30 +105,4 @@ The app will start on `http://localhost:5173/` (for Vite) or `http://localhost:3
 4. Contact artisans for purchase or collaboration.  
 
 ---
-
-## 👩‍💻 Team 3SR
-
-- **Samruddhi Suryawanshi**  
-- **Srishti Singh**  
-- **Samarth**  
-- **Rahul**
-
-Developed as a **Field Project** for the **Bachelor of Computer Applications (BCA)** program.
-
----
-
-## 📜 License
-
-This project is licensed under the **MIT License** — feel free to modify and use it for educational purposes.
-
----
-
-## 🙏 Acknowledgments
-
-- Guided by **Prajakta Mam** for mentorship and support  
-- Special thanks to our college for providing the platform to build and present this project  
-- Inspired by the mission to **empower women artisans through technology**
-
----
-
-> **Karmakriti** – Handcrafted with ❤️ by Team 3SR
+> **Karmakriti** – Handcrafted with ❤️ 
